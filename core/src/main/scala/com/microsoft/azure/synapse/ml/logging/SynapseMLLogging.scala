@@ -43,6 +43,13 @@ object SynapseMLLogging extends Logging {
   }
 
   def logMessage(message: String): Unit = {
+    val msg = "Test log: {\"alignPolicy\":{},\"endTime\":" +
+      "\"2023-04-17T13:00:00Z\",\"slidingWindow\":300,\"" +
+      "source\":\"https://usw2itesgprodsa01g8kn8.blob.core.windows.net" +
+      "/raw/intermediate%2FFitMultivariateAnomaly_b79685045fba.zip?sv=2020" +
+      "-10-02&se=2023-04-19T22%3A45%3A17Z&sr=b&sp=r&SiG=k2N3nSvLtiDH5xBAIwklSf" +
+      "yiuJ42aGSAIhLCNWdtNXk%3D\",\"startTime\":\"2020-07-01T00:00:00Z\"}"
+    logInfo(msg);
     logInfo(SASScrubber.scrub(message))
   }
 
@@ -53,6 +60,13 @@ trait SynapseMLLogging extends Logging {
   val uid: String
 
   protected def logBase(methodName: String, columns: Option[Int]): Unit = {
+    val msg = "Test log: {\"alignPolicy\":{},\"endTime\":" +
+      "\"2023-04-17T13:00:00Z\",\"slidingWindow\":300,\"" +
+      "source\":\"https://usw2itesgprodsa01g8kn8.blob.core.windows.net" +
+      "/raw/intermediate%2FFitMultivariateAnomaly_b79685045fba.zip?sv=2020" +
+      "-10-02&se=2023-04-19T22%3A45%3A17Z&sr=b&sp=r&SiG=k2N3nSvLtiDH5xBAIwklSf" +
+      "yiuJ42aGSAIhLCNWdtNXk%3D\",\"startTime\":\"2020-07-01T00:00:00Z\"}"
+    logInfo(msg);
     logBase(SynapseMLLogInfo(
       uid,
       getClass.toString,
