@@ -29,6 +29,7 @@
             "features/cognitive_services/CognitiveServices - Create Audiobooks",
             "features/cognitive_services/CognitiveServices - Custom Search for Art",
             "features/cognitive_services/CognitiveServices - Multivariate Anomaly Detection",
+            "features/cognitive_services/CognitiveServices - OpenAI Embedding",
             "features/cognitive_services/CognitiveServices - OpenAI",
             "features/cognitive_services/CognitiveServices - Overview",
             "features/cognitive_services/CognitiveServices - Predictive Maintenance"
@@ -135,7 +136,6 @@
             "features/simple_deep_learning/about",
             "features/simple_deep_learning/DeepLearning - Deep Text Classification",
             "features/simple_deep_learning/DeepLearning - Deep Vision Classification",
-            "features/simple_deep_learning/DeepLearning - Deep Vision Classifier",
             "features/simple_deep_learning/installation"
           ]
         },
